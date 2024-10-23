@@ -41,3 +41,27 @@ index 20126ac..981fece 100644
      return (None, None)
  
  # get a windows environment variable in its native unicode format, or None
+--- a/Makefile~	2023-11-21 09:05:00.047274377 -0600
++++ b/Makefile	2024-10-23 14:19:12.847156705 -0500
+@@ -2,7 +2,7 @@
+ 
+ .PHONY : clean dist deb
+ 
+-dist: names.txt.gz dict_en.dat.gz manual.html trelby.1.gz
++dist: names.txt.gz dict_en.dat.gz trelby.1.gz
+ 	python3 setup.py sdist && cp trelby.1.gz doc/
+ 
+ deb: dist
+--- a/Makefile~	2024-10-23 14:19:12.847156705 -0500
++++ b/Makefile	2024-10-23 14:20:17.710925010 -0500
+@@ -2,8 +2,8 @@
+ 
+ .PHONY : clean dist deb
+ 
+-dist: names.txt.gz dict_en.dat.gz trelby.1.gz
+-	python3 setup.py sdist && cp trelby.1.gz doc/
++dist: names.txt.gz dict_en.dat.gz
++	python3 setup.py sdist
+ 
+ deb: dist
+ 	debuild -us -uc -b
