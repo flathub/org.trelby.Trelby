@@ -24,3 +24,5 @@ modules:
         path: org.trelby.Trelby.metainfo.xml
       - type: file
         path: icon256.png
+      - type: file
+        path: trelby.desktop
