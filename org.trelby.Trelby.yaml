@@ -15,10 +15,12 @@ modules:
   - name: trelby
     buildsystem: simple
     build-commands:
-      - install -Dm 644 resources/icon256.png /app/share/icons/hicolor/256x256/apps/org.trelby.Trelby.png
+      - install -Dm 644 icon256.png /app/share/icons/hicolor/256x256/apps/org.trelby.Trelby.png
       - install -Dm 644 org.trelby.Trelby.metainfo.xml /app/share/metainfo/org.trelby.Trelby.metainfo.xml
       - install -Dm 644 trelby.desktop /app/share/applications/org.trelby.Trelby.desktop
       - desktop-file-edit --set-key="Icon" --set-value="org.trelby.Trelby" /app/share/applications/org.trelby.Trelby.desktop
     sources:
       - type: file
         path: org.trelby.Trelby.metainfo.xml
+      - type: file
+        path: icon256.png
