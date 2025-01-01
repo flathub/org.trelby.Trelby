@@ -16,10 +16,12 @@
   </description>
 	  <screenshots>
 		<screenshot type="default">
-		  <image>https://www.trelby.org/files/screens/autocomp_status.png</image>
+		  <image>http://www.trelby.org/files/screens/autocomp_status.png</image>
 		</screenshot>
 	  </screenshots>
 	  <releases>
+		<release version="2.4.12" date="2024-12-31">
+		</release>
 		<release version="2.4.10" date="2024-09-09">
 		</release>
 	  </releases>			
