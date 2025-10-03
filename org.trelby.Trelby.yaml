@@ -1,6 +1,6 @@
 app-id: org.trelby.Trelby
 runtime: org.freedesktop.Platform
-runtime-version: '24.08'
+runtime-version: '25.08'
 sdk: org.freedesktop.Sdk
 command: trelby
 finish-args:
@@ -11,6 +11,7 @@ finish-args:
   - --filesystem=host
 
 modules:
+  - python3-requests.json
   - pip-requirements.json
   - name: trelby
     buildsystem: simple
